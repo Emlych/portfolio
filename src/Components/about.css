@@ -1,0 +1,65 @@
+.about {
+  height: 100vh;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--darksecondaryfont);
+}
+
+.scroll-left {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 80vh;
+  left: 200px;
+}
+.scroll-right {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 80vh;
+  right: 0px;
+}
+
+.about-content {
+  margin-top: 25vh;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+h1 span {
+  color: var(--darksecondary);
+}
+
+h3 {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.about button {
+  background-color: var(--darkprimary);
+  border: 1px var(--darksecondary) solid;
+  color: var(--darksecondary);
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.about button:after {
+  content: " »";
+  color: var(--darkprimary);
+  top: 14px;
+  right: -20px;
+  transition: linear 0.5s;
+}
+
+.about button:hover {
+  color: var(--darkprimary);
+  box-shadow: inset 300px 0px 1px var(--darksecondary);
+}

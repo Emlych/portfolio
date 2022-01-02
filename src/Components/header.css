@@ -1,0 +1,62 @@
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+  .header {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 40px;
+  }
+
+  .header-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+
+  .header-profile span {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--darksecondary);
+  }
+
+  .header-profile img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .header-index nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+  }
+
+  .header-index nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--darkfont);
+  }
+
+  .header-index nav a:hover {
+    color: var(--darksecondary);
+  }
+
+  .header-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .header-link img {
+    width: 40px;
+    height: auto;
+  }
+}

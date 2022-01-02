@@ -1,11 +1,14 @@
 :root {
   --darkprimary: #22272e;
   --darkfont: #adbac7;
+  --darksecondary: #00b3b2;
+  --darksecondaryfont: #fff;
 }
 
 body {
   background-color: var(--darkprimary);
   color: var(--darkfont);
+  font-family: Arial, Verdana, Tahoma, sans-serif;
 }
 
 /* 
@@ -14,7 +17,10 @@ body {
 */
 
 @media (min-width: 1281px) {
-  /* CSS */
+  .app {
+    display: flex;
+    height: 100vh;
+  }
 }
 
 /* 
@@ -23,7 +29,9 @@ body {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
+  .app {
+    display: flex;
+  }
 }
 
 /* 

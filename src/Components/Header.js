@@ -1,13 +1,18 @@
 import React from "react";
-import trigram from "../Assets/trigram.svg";
-import linkedin from "../Assets/linkedin.png";
+import "./header.css";
+//import trigram from "../Assets/trigram.svg";
+import profilepic from "../Assets/profilePic.svg";
+import linkedin from "../Assets/linkedinlight.png";
 import github from "../Assets/githublight.png";
 
 function Header() {
   return (
     <div className="header">
       <div className="header-profile">
-        <img src={trigram} alt="trigram ELD" />
+        <img src={profilepic} alt="trigram ELD" />
+        <p>
+          <span>Emily</span>
+        </p>
         <p>Web Dev</p>
       </div>
       <div className="header-index">
