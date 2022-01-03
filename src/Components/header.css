@@ -5,14 +5,13 @@
 
 @media (min-width: 1025px) {
   .header {
-    width: 140px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 70px 40px;
   }
-
   .header-profile {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    margin-bottom: 60px;
   }
   .header-link img {
     width: 40px;

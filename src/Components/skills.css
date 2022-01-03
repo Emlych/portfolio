@@ -1,0 +1,14 @@
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+  .skills {
+    height: 100vh;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--darksecondaryfont);
+  }
+}

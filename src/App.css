@@ -21,6 +21,19 @@ body {
     display: flex;
     height: 100vh;
   }
+
+  .app-header {
+    position: fixed;
+    width: 140px;
+    height: 100vh;
+    padding: 0 40px;
+  }
+
+  .app-main {
+    position: absolute;
+    left: 220px;
+    width: calc(100% - 140px);
+  }
 }
 
 /* 
@@ -31,6 +44,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .app {
     display: flex;
+    background-color: green;
   }
 }
 
