@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: var(--darksecondaryfont);
   }
 
   .scroll-left,
@@ -24,7 +23,7 @@
     left: 10px;
   }
   .scroll-right {
-    right: 250px;
+    right: 10px;
   }
 
   .about-content {

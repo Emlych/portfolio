@@ -9,6 +9,18 @@
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
-    color: var(--darksecondaryfont);
+    background-color: rosybrown;
+  }
+
+  .skills-left {
+    background-color: rebeccapurple;
+    width: 30%;
+    padding-right: 25px;
+  }
+
+  .skills-right {
+    background-color: red;
+    width: 70%;
+    padding-left: 25px;
   }
 }

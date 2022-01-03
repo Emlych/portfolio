@@ -20,6 +20,7 @@ body {
   .app {
     display: flex;
     height: 100vh;
+    color: var(--darksecondaryfont);
   }
 
   .app-header {
@@ -32,7 +33,7 @@ body {
   .app-main {
     position: absolute;
     left: 220px;
-    width: calc(100% - 140px);
+    width: calc(100vw - 200px);
   }
 }
 

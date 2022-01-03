@@ -1,5 +1,11 @@
 import React from "react";
+import Card from "./Card";
 import "./skills.css";
+
+const skills = [
+  { skilltype: "hardskill", skillname: "anglais" },
+  { skilltype: "softskill", skillname: "zefzef" },
+];
 
 function Skills() {
   return (
@@ -23,7 +29,11 @@ function Skills() {
         </p>
       </div>
 
-      <div className="skills-right">dfdfdf</div>
+      <div className="skills-right">
+        {skills.map((skill, index) => {
+          return <Card key={index} {...skill} />;
+        })}
+      </div>
     </div>
   );
 }
