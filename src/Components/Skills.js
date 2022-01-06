@@ -1,15 +1,36 @@
 import React from "react";
-import Card from "./Card";
+import Cardskill from "./Cardskill";
 import "./skills.css";
 
 const skills = [
-  { skilltype: "hardskill", skillname: "anglais" },
-  { skilltype: "softskill", skillname: "zefzef" },
+  {
+    skilltype: "Front end",
+    skillname1: "HTML5, CSS3, Javascript",
+    skillname2: "React",
+    skillname3: "React Native",
+  },
+  {
+    skilltype: "Back end",
+    skillname1: "Node.js",
+    skillname2: "Mongo DB",
+    skillname3: "Express, Heroku",
+  },
+  {
+    skilltype: "softskill",
+    skillname1: "Project Management",
+    skillname2: "Team Management",
+    skillname3: "Empathy and Creativity",
+  },
+  {
+    skilltype: "hardskill",
+    skillname1: "English / German / Chinese",
+    skillname2: "Adobe Illustrator, In Design",
+  },
 ];
 
 function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skills-left">
         <h2>Skills</h2>
         <p>
@@ -19,19 +40,17 @@ function Skills() {
           sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
           aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
           qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          dolorem ipsum quia inima veniam, quis nostrum exercitationem ullam
+          corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+          consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+          velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+          fugiat quo voluptas nulla pariatur?"
         </p>
       </div>
 
       <div className="skills-right">
         {skills.map((skill, index) => {
-          return <Card key={index} {...skill} />;
+          return <Cardskill key={index} {...skill} />;
         })}
       </div>
     </div>

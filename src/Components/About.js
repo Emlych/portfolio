@@ -6,7 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="scroll-left">
         <FontAwesomeIcon icon={faArrowLeft} /> scroll down
       </div>

@@ -43,6 +43,7 @@
     text-decoration: none;
     font-size: 20px;
     color: var(--darkfont);
+    transition: ease 0.3s;
   }
 
   .header-index nav a:hover {

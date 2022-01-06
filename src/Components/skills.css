@@ -5,22 +5,28 @@
 
 @media (min-width: 1025px) {
   .skills {
-    height: 100vh;
-    padding: 10px 50px;
+    padding: 50px 50px;
     display: flex;
     justify-content: space-between;
-    background-color: rosybrown;
   }
 
   .skills-left {
-    background-color: rebeccapurple;
     width: 30%;
     padding-right: 25px;
   }
 
   .skills-right {
-    background-color: red;
     width: 70%;
     padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-left h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    margin-bottom: 50px;
+    color: var(--darksecondary);
   }
 }
