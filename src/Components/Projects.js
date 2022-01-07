@@ -14,16 +14,16 @@ const projects = [
   {
     name: "second project",
     techno: ["react", "javascript"],
-    description: "some not so long description",
-    url: "https://dfdf",
+    description: "Free code camp exercice",
+    url: "https://codepen.io/CalypsoLgr/full/porYyjE",
     image: randomquote,
   },
   {
-    name: "thrid project",
+    name: "third project",
     techno: ["react", "javascript"],
-    description: "some not so long description",
-    url: "https://dfdf",
-    image: "osfijfoij",
+    description: "Free code camp exercice",
+    url: "https://codepen.io/CalypsoLgr/full/porYyjE",
+    image: randomquote,
   },
 ];
 

@@ -35,11 +35,9 @@ function Cardproject({ name, techno, description, url, image }) {
     <div className="cardproject">
       <div className="card-footer" style={{ backgroundImage: `src(${image})` }}>
         <div className="card-bubble">
-          <div className="bubble">
-            <a href={url} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLink} />
-            </a>
-          </div>
+          <a href={url} target="_blank" rel="noreferrer" className="bubble">
+            <FontAwesomeIcon icon={faLink} />
+          </a>
           {techno.map((item) => (
             <div className="bubble">{iconSelector(item)}</div>
           ))}
