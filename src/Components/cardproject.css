@@ -1,14 +1,15 @@
 :root {
-  --cardwidth: 450px;
-  --cardheight: 400px;
+  --cardwidth: 400px;
+  --cardheight: 450px;
+  --footerheight: 100px;
 }
 
+/* Level 0 */
 .cardproject {
   margin-bottom: 40px;
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 10px;
-  padding: 20px 20px;
   width: var(--cardwidth);
   height: var(--cardheight);
   transition: ease 0.3s;
@@ -20,41 +21,80 @@
   overflow: hidden;
 }
 
-.cardproject:hover {
-  opacity: 0.6;
-}
-
 .cardproject img {
   object-fit: fill;
 }
 
+/* Level 1 */
 .card-footer {
+  /* background-color: royalblue; */
   z-index: 1;
-  position: absolute;
-  height: 80px;
+  position: relative;
   width: 100%;
-  bottom: 0;
+  top: calc(var(--cardheight) - var(--footerheight));
+  height: var(--footerheight);
 }
 
-svg#curve {
-  position: absolute;
-  fill: var(--darksecondaryfont);
-  left: 0;
-  bottom: 0;
-  width: var(--cardwidth);
+.card-blur {
   height: var(--cardheight);
+  width: var(--cardwidth);
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+  position: relative;
+  top: calc(0px - (var(--footerheight)));
+}
+
+.cardproject:hover .card-blur {
+  opacity: 0.6;
+}
+
+/* Level 2 */
+
+svg#curve {
+  position: relative;
+  fill: var(--darksecondaryfont);
+  top: calc(0px - var(--cardheight) + var(--footerheight));
+  height: var(--cardheight);
+  width: 100%;
+}
+
+.card-info {
+  position: relative;
+  top: calc(0px - (var(--footerheight)));
+  padding-left: 20px;
+  transform: translateY(250px);
+  background-color: red;
+  transition: transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
+  color: var(--darksecondaryfont);
+}
+.cardproject:hover .card-info {
+  transform: translateY(0px);
 }
 
 .card-bubble {
+  background-color: rebeccapurple;
   height: 80px;
   width: 400px;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 100px;
   margin: auto;
 }
-.bubble {
+
+/* Level 3 */
+.card-info h3 {
+  font-weight: bold;
+  padding-top: 3px;
+}
+.card-info p {
+}
+
+/* 
+ */
+/* .bubble {
+  background-color: white;
   height: 25px;
   width: 25px;
   border-radius: 100%;
@@ -67,4 +107,4 @@ svg#curve {
 
 .cardproject:hover .bubble {
   transform: translateY(0px);
-}
+} */
