@@ -2,7 +2,9 @@
   .contact {
     padding: 50px 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
   }
   .contact h2 {
     font-size: 60px;
@@ -10,5 +12,47 @@
     line-height: 70px;
     margin-bottom: 50px;
     color: var(--darksecondary);
+  }
+
+  .form-container {
+    margin-top: 50px;
+    padding: 30px 50px;
+    background-color: black;
+    box-shadow: 0 0 50px -8px black;
+    border-radius: 10px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  input:invalid {
+    background-color: #fdd;
+    border: 2px solid #900;
+  }
+
+  /* Button */
+  .form-button {
+    background-color: var(--darkprimary);
+    border: 1px var(--darksecondary) solid;
+    color: var(--darksecondary);
+    width: 300px;
+    margin: 10px auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .form-button:after {
+    content: " »";
+    color: var(--darkprimary);
+    top: 14px;
+    right: -20px;
+    transition: linear 0.5s;
+  }
+  .form-button:hover {
+    color: var(--darkprimary);
+    box-shadow: inset 300px 0px 1px var(--darksecondary);
   }
 }

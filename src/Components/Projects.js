@@ -5,6 +5,7 @@ import randomquote from "../Assets/randomquote.png";
 
 const projects = [
   {
+    _id: "one",
     name: "Random quote generator",
     techno: ["javascript"],
     description: "Free code camp exercice",
@@ -12,6 +13,7 @@ const projects = [
     image: randomquote,
   },
   {
+    _id: "two",
     name: "second project",
     techno: ["react", "javascript"],
     description: "Free code camp exercice",
@@ -19,6 +21,7 @@ const projects = [
     image: randomquote,
   },
   {
+    _id: "three",
     name: "third project",
     techno: ["react", "javascript"],
     description: "Free code camp exercice",
