@@ -10,16 +10,19 @@ function Cardskill({
 }) {
   return (
     <div className="cardskill">
-      <div>
-        <h2>{skilltype}</h2>
-      </div>
+      <div className="box">
+        <span></span>
+        <div className="content">
+          <h2>{skilltype}</h2>
 
-      <ul className="card-list">
-        <li>{skillname1}</li>
-        <li>{skillname2}</li>
-        <li>{skillname3}</li>
-        <li>{skillname4}</li>
-      </ul>
+          <ul className="card-list">
+            <li>{skillname1}</li>
+            <li>{skillname2}</li>
+            <li>{skillname3}</li>
+            <li>{skillname4}</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

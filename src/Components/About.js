@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
+import Type from "./Type";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSync } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
@@ -12,13 +12,13 @@ function About() {
       </div>
       <div className="about-content">
         <h1>
-          <span>E</span>mily <span>LD</span>,
-          <br />
-          Web Developer
+          Hello,
+          <br />I am <span>Emily LD</span>!
+          <div className="about-type">
+            <Type />
+          </div>
         </h1>
-        <h3>
-          <FontAwesomeIcon icon={faSync} /> Creative
-        </h3>
+
         <button>Contact me</button>
       </div>
       <div className="scroll-right">

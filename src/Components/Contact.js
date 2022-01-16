@@ -28,32 +28,39 @@ function Contact() {
         message.
       </p>
       <div className="form-container">
-        <label for="lastName">Last Name</label>
-        <input
-          type="text"
-          placeholder="Last Name"
-          required
-          tabIndex={1}
-          ref={lasttNameRef}
-        />
-        <label for="firstName">First Name</label>
-        <input
-          type="text"
-          placeholder="First Name"
-          required
-          tabIndex={2}
-          ref={firstNameRef}
-        />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="exemple@gmail.com"
-          required
-          tabIndex={3}
-          ref={emailRef}
-        />
+        <div className="form-label-input">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            placeholder="Last Name"
+            required
+            tabIndex={1}
+            ref={lasttNameRef}
+          />
+        </div>
+        <div className="form-label-input">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            placeholder="First Name"
+            required
+            tabIndex={2}
+            ref={firstNameRef}
+          />
+        </div>
+        <div className="form-label-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="exemple@gmail.com"
+            required
+            tabIndex={3}
+            ref={emailRef}
+          />
+        </div>
+
         <label for="message">Message</label>
         <textarea
           placeholder="Start typing..."
