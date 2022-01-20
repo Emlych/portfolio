@@ -6,17 +6,17 @@
 /* @media (min-width: 1025px) { */
 .skills {
   padding: 50px 50px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-.skills-left {
+/* .skills-left {
   width: 30%;
   padding-right: 25px;
 }
-
+*/
 .skills-right {
-  width: 70%;
+  width: 90%;
   padding-left: 25px;
   display: flex;
   flex-wrap: wrap;

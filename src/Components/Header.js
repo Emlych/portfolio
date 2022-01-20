@@ -2,8 +2,17 @@ import React from "react";
 import "./header.css";
 //import trigram from "../Assets/trigram.svg";
 import profilepic from "../Assets/profilePic.svg";
-import linkedin from "../Assets/linkedinlight.png";
-import github from "../Assets/githublight.png";
+// import linkedin from "../Assets/linkedinlight.png";
+// import github from "../Assets/githublight.png";
+// import codepen from "../Assets/codepen.svg";
+
+//icons from Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   return (
@@ -25,7 +34,7 @@ function Header() {
       </div>
       <div className="header-link">
         <a href="https://github.com/Emlych" target="_blank" rel="noreferrer">
-          <img src={github} alt="github logo" />
+          <FontAwesomeIcon icon={faGithub} />
         </a>
 
         <a
@@ -33,7 +42,16 @@ function Header() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={linkedin} alt="linkedin logo" />
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+
+        <a
+          href="https://codepen.io/CalypsoLgr"
+          target="_blank"
+          rel="noreferrer"
+          className="codepen"
+        >
+          <FontAwesomeIcon icon={faCodepen} />
         </a>
       </div>
     </div>
